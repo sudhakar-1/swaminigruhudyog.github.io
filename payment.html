@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -10,7 +11,9 @@
 <!------ Include the above in your HEAD tag ---------->
 <head>
     <title>Checkout Form</title>
-
+   <script src="https://js.braintreegateway.com/web/3.31.0/js/client.min.js"></script>
+        <script src="https://js.braintreegateway.com/web/3.31.0/js/google-payment.min.js"></script>
+        <script src="https://payments.developers.google.com/js/apis/pay.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -302,6 +305,7 @@ ul, ol {
 
 
 </style>
+
 </head>
 
 <body>
@@ -414,12 +418,12 @@ function closeNav() {
 
                 <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com" >
                 </div>
 
                 <div class="form-group">
                     <label for="adress">Address</label>
-                    <input type="text" class="form-control" id="adress" placeholder="1234 Main Street" required>
+                    <input type="text" class="form-control" id="adress" placeholder="1234 Main Street">
                     <div class="invalid-feedback">
                         Please enter your shipping address.
                     </div>
@@ -494,6 +498,20 @@ function closeNav() {
                    
                  
                   <pre><img src="Google-Pay.jpg" width="80" height="40">  <img src="PhonePe-offers.png" width="85" height="40"><img src="amazon.jpg" width="120" height="40"></pre><br>
+                  <h4>Payment Options</h4>
+                   <div >
+    <a href="https://pay.google.com/gp/w/u/0/home/signup?sctid=3019510826673955"><img src="Google-Pay.jpg" width="100" height="50"></a> 
+</div>
+<br>
+      <div>
+  <a href="https://www.phonepe.com/"><img src="PhonePe-offers.png" width="100" height="50"></a>  
+</div>
+<br>
+<div id="button-wrapper">
+  <a href="https://www.amazon.in/gp/sva/dashboard"><img src="amazon.jpg" width="100" height="50"></a> 
+</div>
+
+                  <br>
                  <b> NOTE :</b><br>
                         <h5 style="color: green;">    A. SCAN QR CODE TO SEND MONEY.</h5><br>
                       <strong>Bank Transfer</strong>  <br>    
